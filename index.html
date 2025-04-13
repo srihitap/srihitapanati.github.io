@@ -8,14 +8,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="projects.html">My Experience</a>
+    </div>
+
+  <!-- Toggle button -->
+  <span class="openbtn" onclick="toggleSidebar()">☰ Menu</span>
+
   <header>
-    <h1>Hi, I'm Srihita 💻</h1>
-    <p>Future Full Stack Engineer • Nature Lover • Coffee Enthusiast</p>
+    <h1>Srihita Panati</h1>
   </header>
 
   <section class="about">
     <h2>About Me</h2>
-    <p>I’m an EECS student with a love for design, code, and innovation. Hi how are you doing? 🌱</p>
+    <p>Hello, my name is Srihita and I'm currently a sophomore studying Electrical Engineering Computer Science at Contra Costa College. I will be txransferring to UC Davis in the Fall to complete my Bachelor's. <br><br>
+      
+      I'm interested in Web Development, Environmental Sustainability, and Health x Technology.
+    
+    This is a website I created to share my experiences and achievements.</p>
+    
+    <img src="headshot.jpg" alt="Srihita smiling" class="about-photo" />
+
   </section>
 
   <section class="projects">
@@ -30,5 +46,11 @@
   <footer>
     <p>Let’s connect — srihitapanati21@gmail.com</p>
   </footer>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
