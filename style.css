@@ -98,3 +98,139 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+body {
+  font-family: 'Courier New', sans-serif;
+  margin: 0;
+  background-color: #fff9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffe4ec;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 2px solid #f8cdd9;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.about, .projects {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background: #fce4ec;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #f8cdd9;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #ffe4ec;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #f8cdd9;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+}
+
+/* Toggle button */
+.openbtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #ffe4ec;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.openbtn:hover {
+  background-color: #faa7c0; /* Slightly deeper pink */
+  transition: background-color 0.3s ease;
+}
+
+/* When sidebar is active */
+.sidebar.active {
+  width: 250px;
+}
+
+/* Main content wrapper */
+#main {
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is active, shift the main content */
+#main.shifted {
+  margin-left: 250px; /* Same width as the sidebar */
+}
+
+/* Styling for experience section */
+.experience {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.experience-item {
+  background: #ffe4ec;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.experience-item h3 {
+  margin-top: 0;
+  color: #040005;
+}
+
+.experience-item:hover {
+  background-color: #faa7c0; /* Slightly deeper pink */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.experience-item p {
+  margin: 0.5rem 0;
+}
+
+
