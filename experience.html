@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+    <a href="index.html">About Me</a>
+    <a href="experience.html">My Experience</a>
+  </div>
+
+  <!-- Toggle button -->
+  <span class="openbtn" onclick="toggleSidebar()">☰ Menu</span>
+
+  <!-- Main content wrapper -->
+  <div id="main">
+    <header>
+      <h1>Srihita Panati</h1>
+    </header>
+
+    <section class="experience">
+      <h2>My Experience</h2>
+
+      <div class="experience-item">
+        <h3>Technology Intern, MCE</h3>
+        <p><strong>Jan 2025 - Present</strong></p>
+        <p>Worked on classifying EMG signals using deep learning models and automated data analysis tools in Python. Achieved 90%+ accuracy and reduced manual work by building visualization tools.</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Scheduling App Developer, Contra Costa College</h3>
+        <p><strong>August 2024</strong></p>
+        <p>Taught introductory programming to middle school students using Scratch. Created engaging lesson plans and encouraged creativity through projects.</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Research Intern, San Francisco State University</h3>
+        <p><strong>June 2024 - July 2024</strong></p>
+        <p>Developed a scheduling app for teachers under a CS professor. Designed layout, learned new tools, and presented progress in weekly meetings.</p>
+      </div>
+      
+       <div class="experience-item">
+        <h3>After-School Teacher</h3>
+        <p><strong>Sept 2023 - Jun 2024</strong></p>
+        <p>Developed a scheduling app for teachers under a CS professor. Designed layout, learned new tools, and presented progress in weekly meetings.</p>
+      </div>
+    </section>
+  </div> <!-- End of #main -->
+
+  <footer>
+    <p>Let’s connect — srihitapanati21@gmail.com | www.linkedin.com/in/srihitapanati</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+      document.getElementById("main").classList.toggle("shifted");
+    }
+  </script>
+</body>
+</html>
