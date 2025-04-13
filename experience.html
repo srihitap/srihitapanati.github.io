@@ -6,6 +6,117 @@
   <title>My Experience</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #fff5f8;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      background-color: #fddde6;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #ffb6c1;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 10px 30px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #333;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #faa7c0;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    .openbtn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      background-color: #ffb6c1;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+      border-radius: 5px;
+    }
+
+    #main {
+      transition: margin-left .3s;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .experience {
+      padding-top: 1rem;
+    }
+
+    .experience-item {
+      background-color: #ffe4ec;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .experience-item h3 {
+      margin-top: 0;
+      color: #d6336c;
+    }
+
+    .experience-item p {
+      margin: 0.5rem 0;
+    }
+
+    .experience-item:hover {
+      background-color: #faa7c0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #fddde6;
+      margin-top: 2rem;
+    }
+
+    .sidebar.active {
+      width: 250px;
+    }
+
+    #main.shifted {
+      margin-left: 250px;
+    }
+  </style>
 </head>
 <body>
   <!-- Sidebar -->
@@ -27,36 +138,29 @@
     <section class="experience">
       <h2>My Experience</h2>
 
-    /* Experience Section Styling */
-    .experience {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-    }
+      <div class="experience-item">
+        <h3>Technology Intern, MCE</h3>
+        <p><strong>Jan 2025 - Present</strong></p>
+        <p>Worked on classifying EMG signals using deep learning models and automated data analysis tools in Python. Achieved 90%+ accuracy and reduced manual work by building visualization tools.</p>
+      </div>
 
-  .experience-item {
-    background-color: #ffe4ec; /* Light pink background */
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .experience-item h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .experience-item p {
-    margin: 0.5rem 0;
-  }
-  
-  .experience-item:hover {
-    background-color: #faa7c0; /* Slightly deeper pink on hover */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+      <div class="experience-item">
+        <h3>Scheduling App Developer, Contra Costa College</h3>
+        <p><strong>August 2024</strong></p>
+        <p>Developed a scheduling app for teachers under a CS professor. Designed layout, learned new tools, and presented progress in weekly meetings.</p>
+      </div>
 
+      <div class="experience-item">
+        <h3>Research Intern, San Francisco State University</h3>
+        <p><strong>June 2024 - July 2024</strong></p>
+        <p>Handled large EMG data sets and built automated Python tools to process and visualize results. Calibrated equipment, conducted experiments, and collaborated with mentors.</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>After-School Teacher, YouthCodeNow</h3>
+        <p><strong>Sept 2023 - Jun 2024</strong></p>
+        <p>Taught introductory programming to middle school students using Scratch. Created engaging lesson plans and encouraged creativity through projects.</p>
+      </div>
     </section>
   </div> <!-- End of #main -->
 
