@@ -32,6 +32,15 @@ footer {
   border-top: 1px solid #f8cdd9;
 }
 
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; /* optional: center it */
+}
+
 /* Sidebar styles */
 .sidebar {
   height: 100%;
